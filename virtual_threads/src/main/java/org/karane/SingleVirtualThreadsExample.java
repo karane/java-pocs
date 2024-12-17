@@ -1,6 +1,6 @@
 package org.karane;
 
-public class VirtualThreadsExample {
+public class SingleVirtualThreadsExample {
 
     public static void main(String[] args) {
         // Create and start a virtual thread
