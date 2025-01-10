@@ -8,7 +8,7 @@ public class SingleVirtualThreadsExample {
             System.out.println("Hello from a virtual thread! - " + Thread.currentThread());
             try {
                 for(int i=0; i<100; i++) {
-                    Thread.sleep(10);
+                    Thread.sleep(100);
                     System.out.print(".");
                 }
                 System.out.println();
