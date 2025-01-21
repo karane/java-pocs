@@ -43,8 +43,8 @@ Ensure you have the following installed:
 
 ```bash
 
-git clone https://github.com/your-username/archunit-sample.git
-cd archunit-sample
+git clone hhttps://github.com/karane/java-pocs.git
+cd java-pocs/arch-unit-poc
 ```
 
 2. **Run the tests**:
