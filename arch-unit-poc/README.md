@@ -8,17 +8,19 @@ The project follows a typical layered architecture:
 src
 ├── main
 │   ├── java
-│   │   └── com
+│   │   └── org
 │   │       └── karane
-│   │           ├── controller   // Controllers handle incoming requests
-│   │           ├── service      // Services implement business logic
-│   │           ├── repository   // Repositories interact with the database
-│   │           └── model        // Domain models
+│   │           └── archunit
+│   │               ├── controller   // Controllers handle incoming requests
+│   │               ├── service      // Services implement business logic
+│   │               ├── repository   // Repositories interact with the database
+│   │               └── model        // Domain models
 └── test
     └── java
-        └── com
+        └── org
             └── karane
-                └── LayeredArchitectureTest.java // ArchUnit tests
+                └── archunit
+                    └── LayeredArchitectureTest.java // ArchUnit tests
 ```
 
 ## Key Features
