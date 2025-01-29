@@ -11,8 +11,8 @@ public class ThreadComparison {
         System.out.println("Platform Threads:");
         measurePerformanceAndMemory(taskCount, true);
 
-        System.out.println("Virtual Threads:");
-        measurePerformanceAndMemory(taskCount, false);
+//        System.out.println("Virtual Threads:");
+//        measurePerformanceAndMemory(taskCount, false);
     }
 
     private static void measurePerformanceAndMemory(int taskCount, boolean isPlatformThread) {
@@ -37,10 +37,11 @@ public class ThreadComparison {
         System.gc();
         long afterUsedMemory = runtime.totalMemory() - runtime.freeMemory();
 
-        System.out.println("Execution Time: " + Duration.ofNanos(endTime - startTime).toMillis() + " ms");
-        System.out.println("Memory Used: " + (afterUsedMemory - beforeUsedMemory) / 1024 + " KB\n");
+        System.out.println("Final Execution Time: " + Duration.ofNanos(endTime - startTime).toMillis() + " ms");
+        System.out.println("Final Memory Used: " + (afterUsedMemory - beforeUsedMemory) / 1024 + " KB\n");
     }
 
+    //TODO: try to measure memory each time, and take the peaks
     private static void executeTasksWithPlatformThreads(int taskCount) {
         Thread[] threads = new Thread[taskCount];
 

@@ -9,7 +9,9 @@ public class MyController {
         this.myService = myService;
     }
 
-    public void handleRequest() {
+    public String handleRequest() {
         myService.performService();
+
+        return "OK";
     }
 }

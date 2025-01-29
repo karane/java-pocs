@@ -1,9 +1,12 @@
 package org.karane.archunit.model;
 
-public class MyModel {
+import org.karane.archunit.annotations.Entity;
+
+@Entity
+public class UserEntity {
     private String name;
 
-    public MyModel(String name) {
+    public UserEntity(String name) {
         this.name = name;
     }
 
